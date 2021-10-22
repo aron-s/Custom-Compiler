@@ -1,2 +1,2 @@
 # Lexical-Analyser
-Part 1 of A lexical analyser project for a simple language.
+Part 1 of a lexical analyser project for a simple language.
