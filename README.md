@@ -1,5 +1,5 @@
 # Lexical-Analyser
-Part 1 of a lexical analyser project for a simple progrmming language.
+Part 1 of a lexical analyser project for a simple progrmming language. Part of Class Project.
 
 Lexical Rules for the language-
 
