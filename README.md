@@ -25,20 +25,35 @@ The token for a real constant is RCONST. For example, real number constants such
 Parser to the language is based on the following grammar rules specified in EBNF notations. Files - Parse.cpp, Parse.h
 
 Prog ::= PROGRAM IDENT StmtList END PROGRAM
+
 DeclStmt ::= (INT | FLOAT) IdentList
+
 IdentList ::= IDENT, {, IDENT}
+
 StmtList ::= Stmt; {Stmt;}
+
 Stmt ::= DeclStmt | ControlStmt
+
 ControlStmt ::= AssigStmt | IfStmt | WriteStmt
+
 WriteStmt ::= WRITE ExprList
+
 IfStmt ::= IF (LogicExpr) ControlStmt
+
 AssignStmt ::= Var = Expr
+
 ExprList ::= Expr {, Expr}
+
 Expr ::= Term {(+|-) Term}
+
 Term ::= SFactor {( *| / | % ) SFactor}
+
 SFactor ::= (+ | -) Factor | Factor
+
 LogicExpr ::= Expr (== | >) Expr
+
 Var ::= IDENT
+
 Factor = IDENT | ICONST | RCONST | SCONST | (Expr)
 
 # Interpretor 
